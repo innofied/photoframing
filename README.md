@@ -4,11 +4,12 @@ This is a photo framing application. The application sets preset borders on the 
 
 ###Pre-Knowledge Required
 
-A brief knowledge aboout
- a. UIImage
- b. CIImage
- c. CIFilter
- d. CIContext
+A brief knowledge aboout:
+
+* UIImage
+* CIImage
+* CIFilter
+* CIContext
 
 ###BLOG
 
