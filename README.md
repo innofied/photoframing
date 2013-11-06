@@ -13,8 +13,8 @@ A brief knowledge aboout:
 
 ###BLOG
 
-You can read my blog alongside to understand this application
-my blog link: http://wp.me/p3mX74-oB
+You can read my blog alongside to understand this application.
+My blog link: http://wp.me/p3mX74-oB
 
 
 ![Result Image of the Application](https://github.com/innofied/photoframing/blob/0eceee373aa00460e1f18e78fb932e064bbf677d/bordersAtFinal.png "Image of final app performance")
