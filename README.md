@@ -10,6 +10,11 @@ A brief knowledge aboout:
 * CIImage
 * CIFilter
 * CIContext
+ 
+###Updates
+
+* Support for retina as well as non retinal display devices.
+
 
 ###BLOG
 
