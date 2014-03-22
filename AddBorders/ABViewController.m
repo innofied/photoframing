@@ -46,10 +46,25 @@
     
     imageView.image = [UIImage imageNamed:@"car.png"];
     
+    float scale ;
     
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00)
+    {
+         // RETINA DISPLAY
+    	scale = 2.0;
+    }
+    else
+    {
+    	// non - retina display
+    	scale = 1.0
+    }
     
     UIImage *borderImage = [UIImage imageNamed:[NSString stringWithFormat:@"borderImage%i.png", sender.tag]];
     
+    
+    borderImage = [ ABViewController  imageWithImage:borderImage
+		      scaledToSize:CGSizeMake(imageView.frame.size.width*scale, imageView.frame.size,height*scale)];
+		      
     NSData *dataFromImage = UIImageJPEGRepresentation(imageView.image, 1);
     
     
@@ -73,5 +88,19 @@
     
     
 }
+
+
+
+-(UIImage*)imageWithImage:(UIImage*)image
+              scaledToSize:(CGSize)newSize
+{
+    UIGraphicsBeginImageContext( newSize );
+    [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
 
 @end
