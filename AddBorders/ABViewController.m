@@ -62,7 +62,7 @@
     UIImage *borderImage = [UIImage imageNamed:[NSString stringWithFormat:@"borderImage%li.png", (long)sender.tag]];
     
     
-    borderImage = [ ABViewController  imageWithImage:borderImage
+    borderImage = [ self  imageWithImage:borderImage
                                         scaledToSize:CGSizeMake(imageView.frame.size.width*scale, imageView.frame.size.height*scale)];
     NSData *dataFromImage = UIImageJPEGRepresentation(imageView.image, 1);
     
